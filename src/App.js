@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import DisplayMessages from "./Components/DisplayMessages/DisplayMessages";
-
+import AddMessageForm from "./Components/AddMessage/AddMessageForm";
 function App() {
   const [messages, setMessages] = useState([
     {
@@ -18,10 +18,17 @@ function App() {
     
   ]);
 
+  function addNewMessage(message){
+    let tempMessages = [...messages, message];
+
+    setMessages(tempMessages);
+  }
+
   return (
     <div>
+      <AddMessageForm addNewMessageProperty={addNewMessage}/>
       <DisplayMessages parentMessages={messages}/>
-     
+      
 
     </div>
   );
