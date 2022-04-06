@@ -1,9 +1,15 @@
 const DisplayMessages = (props) => {
+  
+
+  
+  
+  
   return (
     <table>
       <thead>
         <tr>
           <th></th>
+
         </tr>
       </thead>
       <tbody>
@@ -15,6 +21,8 @@ const DisplayMessages = (props) => {
               </tr>
               <tr>
                 <td>{message.post}</td>
+                <td><button>👍 </button></td>
+                <td><button>👎 </button></td>
               </tr>
             </tr>
           );

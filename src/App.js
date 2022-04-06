@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 import DisplayMessages from "./Components/DisplayMessages/DisplayMessages";
 import AddMessageForm from "./Components/AddMessage/AddMessageForm";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import "./App.css";
+import CustomButton from "./Components/CustomButton/CustomButton";
+
 function App() {
   const [messages, setMessages] = useState([
     {
@@ -15,20 +19,30 @@ function App() {
       name: "Hermione Granger",
       post: "Now if you two don’t mind, I’m going to bed before either of you come up with another clever idea to get us killed - or worse, expelled.",
     },
-    
   ]);
 
-  function addNewMessage(message){
+  function addNewMessage(message) {
     let tempMessages = [...messages, message];
 
     setMessages(tempMessages);
   }
 
   return (
-    <div>
-      <AddMessageForm addNewMessageProperty={addNewMessage}/>
-      <DisplayMessages parentMessages={messages}/>
-      
+    <div className="container">
+          <div className="row">
+          <div className="col-md-6">
+            <div className="border-box">
+            <AddMessageForm addNewMessageProperty={addNewMessage} />
+            </div>
+            </div>
+        </div>
+        <div className="row">
+          <div className="col-md-6">
+            <div className="border-box">
+          <DisplayMessages parentMessages={messages} />
+            </div>
+        </div>
+        </div>
 
     </div>
   );

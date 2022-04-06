@@ -18,10 +18,10 @@ const AddMessageForm = (props) => {
     return ( 
         <form onSubmit={handleSubmit}>
             <tr><label>Name</label>
-            <input type=" " value={name} onChange={(event)=> setName(event.target.value)} /></tr>
+            <input type="name" value={name} onChange={(event)=> setName(event.target.value)} /></tr>
             <tr><label>Post</label>
-            <input type=" " value={post} onChange={(event)=> setPost(event.target.value)}/>
-            <button type="submit">Create</button></tr> 
+            <input type="post" value={post} onChange={(event)=> setPost(event.target.value)}/></tr>
+            <button type="submit">Create</button>
         </form>
      );
 }
