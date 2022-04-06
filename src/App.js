@@ -30,7 +30,8 @@ function App() {
   return (
     <div className="container">
           <div className="row">
-            <h3 style={{"margin-bottom": "1em"}}>SocialFeed</h3>
+            <h3 style={{"margin-top": "1em"}}>Social
+            <small className="text-muted">Feed</small></h3>
           <div className="col-md-6">
             <div className="border-box">
             <AddMessageForm addNewMessageProperty={addNewMessage} />

@@ -1,4 +1,4 @@
-
+import CustomButton from "../CustomButton/CustomButton";
 
 
 
@@ -23,8 +23,11 @@ const DisplayMessages = (props) => {
                 <td>{message.post}</td>
               </tr>
               <tr>
-                <td><button type="submit" className="btn btn-primary" style={{"margin-top": "1em"}}>👍 </button>
-                <button type="submit" className="btn btn-primary" style={{"margin-top": "1em"}}>👎 </button></td>
+                <td>{Date()}</td>
+              </tr>
+              <tr>
+                <CustomButton message="👍"/> 
+                <CustomButton message="👎"/>
               </tr>
             </tr>
           );
