@@ -3,7 +3,7 @@ import DisplayMessages from "./Components/DisplayMessages/DisplayMessages";
 import AddMessageForm from "./Components/AddMessage/AddMessageForm";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./App.css";
-import CustomButton from "./Components/CustomButton/CustomButton";
+
 
 function App() {
   const [messages, setMessages] = useState([
@@ -30,6 +30,7 @@ function App() {
   return (
     <div className="container">
           <div className="row">
+            <h3 style={{"margin-bottom": "1em"}}>SocialFeed</h3>
           <div className="col-md-6">
             <div className="border-box">
             <AddMessageForm addNewMessageProperty={addNewMessage} />

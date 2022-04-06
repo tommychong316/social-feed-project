@@ -1,11 +1,11 @@
+
+
+
+
 const DisplayMessages = (props) => {
   
-
-  
-  
-  
   return (
-    <table>
+    <table className="table"> 
       <thead>
         <tr>
           <th></th>
@@ -21,8 +21,10 @@ const DisplayMessages = (props) => {
               </tr>
               <tr>
                 <td>{message.post}</td>
-                <td><button>👍 </button></td>
-                <td><button>👎 </button></td>
+              </tr>
+              <tr>
+                <td><button type="submit" className="btn btn-primary" style={{"margin-top": "1em"}}>👍 </button>
+                <button type="submit" className="btn btn-primary" style={{"margin-top": "1em"}}>👎 </button></td>
               </tr>
             </tr>
           );
