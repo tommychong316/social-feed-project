@@ -23,9 +23,6 @@ const DisplayMessages = (props) => {
                 <td>{message.post}</td>
               </tr>
               <tr>
-                <td>{Date()}</td>
-              </tr>
-              <tr>
                 <CustomButton message="👍"/> 
                 <CustomButton message="👎"/>
               </tr>
